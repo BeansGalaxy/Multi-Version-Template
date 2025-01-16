@@ -2,6 +2,7 @@ pluginManagement.repositories {
     maven("https://maven.fabricmc.net/")
     maven("https://maven.architectury.dev/")
     maven("https://maven.minecraftforge.net/")
+    maven("https://maven.neoforged.net/releases/")
     gradlePluginPortal()
 }
 
@@ -15,17 +16,17 @@ gradleEnterprise.buildScan {
 }
 
 include(
-    "modules:1.20.2-multiloader",
-    "modules:1.20.2-multiloader:common",
-    "modules:1.20.2-multiloader:fabric",
-    "modules:1.20.2-multiloader:forge"
+    "modules:1.21",
+    "modules:1.21:common",
+    "modules:1.21:fabric",
+    "modules:1.21:neoforge"
 )
 
 include(
-    "modules:1.20.2-multiloader-mixins",
-    "modules:1.20.2-multiloader-mixins:common",
-    "modules:1.20.2-multiloader-mixins:fabric",
-    "modules:1.20.2-multiloader-mixins:forge"
+    "modules:1.20.1",
+    "modules:1.20.1:common",
+    "modules:1.20.1:fabric",
+    "modules:1.20.1:forge"
 )
 
-rootProject.name = "ExampleMod"
+rootProject.name = "Multi-Version-Template"
